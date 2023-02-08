@@ -7,8 +7,8 @@ We currently compare:
 Name                                                 | Style                 | Notes
 -----------------------------------------------------|-----------------------|------
 No-op                                                | N/A                   | N/A
+**[argp](https://github.com/jirutka/argp)**          | `derive`              | Added in this fork
 [argh](https://github.com/google/argh)               | `derive`              |
-[argp](https://github.com/jirutka/argp)              | `derive`              |
 [bpaf](https://github.com/pacak/bpaf)                | Combinatoric or `derive` |
 [clap_lex](https://github.com/clap-rs/clap)          | Imperative            | No help generation
 [clap](https://github.com/clap-rs/clap)              | Builder or `derive`   | Color, suggested fixes, completions
@@ -27,22 +27,23 @@ docs*
 
 Name | Overhead (release) | Build (debug) | Parse (release) | Invalid UTF-8 | Downloads | Version
 -----|--------------------|---------------|-----------------|---------------|-----------|--------
-null | 0 KiB | 399ms *(full)* <br/>200ms *(incremental)* | 3ms | Y | - | -
-argh | 35 KiB | 4s *(full)* <br/>237ms *(incremental)* | 3ms | N | ![Download count](https://img.shields.io/crates/dr/argh) | v0.1.8
-bpaf | 165 KiB | 1s *(full)* <br/>256ms *(incremental)* | 5ms | Y | ![Download count](https://img.shields.io/crates/dr/bpaf) | v0.6.0
-bpaf_derive | 160 KiB | 7s *(full)* <br/>256ms *(incremental)* | 4ms | Y | ![Download count](https://img.shields.io/crates/dr/bpaf) | v0.6.0
-clap | 607 KiB | 4s *(full)* <br/>467ms *(incremental)* | 4ms | Y | ![Download count](https://img.shields.io/crates/dr/clap) | v4.0.0
-clap-minimal | 417 KiB | 3s *(full)* <br/>380ms *(incremental)* | 4ms | Y | ![Download count](https://img.shields.io/crates/dr/clap) | v4.0.0
-clap_derive | 637 KiB | 10s *(full)* <br/>501ms *(incremental)* | 4ms | Y | ![Download count](https://img.shields.io/crates/dr/clap) | v4.0.0
-clap_lex | 37 KiB | 759ms *(full)* <br/>229ms *(incremental)* | 3ms | Y | ![Download count](https://img.shields.io/crates/dr/clap_lex) | v0.3.0
-gumdrop | 33 KiB | 4s *(full)* <br/>233ms *(incremental)* | 3ms | N | ![Download count](https://img.shields.io/crates/dr/gumdrop) | v0.8.1
-lexopt | 36 KiB | 591ms *(full)* <br/>217ms *(incremental)* | 3ms | Y | ![Download count](https://img.shields.io/crates/dr/lexopt) | v0.2.1
-pico-args | 28 KiB | 583ms *(full)* <br/>215ms *(incremental)* | 4ms | Y | ![Download count](https://img.shields.io/crates/dr/pico-args) | v0.5.0
-xflags | 24 KiB | 1s *(full)* <br/>210ms *(incremental)* | 3ms | Y | ![Download count](https://img.shields.io/crates/dr/xflags) | v0.2.4
+null | 0 KiB | 534ms *(full)* <br/>327ms *(incremental)* | 1ms | Y | - | -
+**argp** | **58 KiB** | 6s *(full)* <br/>429ms *(incremental)* | 1ms | N | ![Download count](https://img.shields.io/crates/dr/argp) | v0.1.0
+argh | 39 KiB | 6s *(full)* <br/>406ms *(incremental)* | 1ms | N | ![Download count](https://img.shields.io/crates/dr/argh) | v0.1.9
+bpaf | 214 KiB | 2s *(full)* <br/>485ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/bpaf) | v0.7.7
+bpaf_derive | 213 KiB | 9s *(full)* <br/>478ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/bpaf) | v0.7.7
+clap | 610 KiB | 7s *(full)* <br/>747ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/clap) | v4.1.4
+clap-minimal | 428 KiB | 4s *(full)* <br/>628ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/clap) | v4.1.4
+clap_derive | 643 KiB | 15s *(full)* <br/>840ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/clap) | v4.1.4
+clap_lex | 37 KiB | 1s *(full)* <br/>404ms *(incremental)* | 1ms | Y | ![Download count](https://img.shields.io/crates/dr/clap_lex) | v0.3.1
+gumdrop | 37 KiB | 6s *(full)* <br/>434ms *(incremental)* | 1ms | N | ![Download count](https://img.shields.io/crates/dr/gumdrop) | v0.8.1
+lexopt | 36 KiB | 805ms *(full)* <br/>358ms *(incremental)* | 1ms | Y | ![Download count](https://img.shields.io/crates/dr/lexopt) | v0.3.0
+pico-args | 32 KiB | 789ms *(full)* <br/>361ms *(incremental)* | 6ms | Y | ![Download count](https://img.shields.io/crates/dr/pico-args) | v0.5.0
+xflags | 27 KiB | 2s *(full)* <br/>349ms *(incremental)* | 1ms | Y | ![Download count](https://img.shields.io/crates/dr/xflags) | v0.3.1
 
-*System: Linux 5.4.0-104-generic (x86_64) w/ `-j 8`*
+*System: Linux 5.15.0-1031-azure (x86_64) w/ `-j 2` (GitHub Actions, [see log](https://github.com/jirutka/argparse-rosetta-rs/actions/runs/4119655231/jobs/7113567245))*
 
-*rustc: rustc 1.64.0 (a55dd71d5 2022-09-19)*
+*rustc: rustc 1.67.0 (fc594f156 2023-01-24)*
 
 Notes:
 - Overhead will be lower if your application shares dependencies with your argument parsing library.
