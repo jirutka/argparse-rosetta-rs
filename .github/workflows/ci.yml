@@ -64,3 +64,20 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         args: --workspace --all-features --all-targets -- -D warnings --allow deprecated
+  bench:
+    name: bench
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Install Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        profile: minimal
+        override: true
+        components: rustfmt
+    - uses: Swatinem/rust-cache@v2
+    - run: cargo install hyperfine
+    - run: ./bench.py
+    - run: ./format.py
