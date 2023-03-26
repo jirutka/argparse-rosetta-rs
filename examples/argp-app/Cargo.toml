@@ -9,4 +9,4 @@ name = "argp-app"
 path = "app.rs"
 
 [dependencies]
-argp = "0.1.0"
+argp = "0.2.0"

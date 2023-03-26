@@ -40,9 +40,9 @@ checksum = "149f75bbec1827618262e0855a68f0f9a7f2edc13faebf33c4f16d6725edb6a9"
 
 [[package]]
 name = "argp"
-version = "0.1.0"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "22db9a339b8eb6d93d4b32374db2464b9cb4b802aadab1c19baaf0d98cf1f6ec"
+checksum = "11eec70c7243fafca1fd5f8b7e3ad6ef800ec2aa1ebdcb144d42b0b2a3e7ac04"
 dependencies = [
  "argp_derive",
 ]
@@ -56,9 +56,9 @@ dependencies = [
 
 [[package]]
 name = "argp_derive"
-version = "0.1.0"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "90f3ef96a4491d4465ed959837cc30eea24b68262cceeb9e0843e33b691cee59"
+checksum = "76a812f10d36ae950befcdcde4a40fe1d7b87cdaa25b2ebe6270c1afff1c94b0"
 dependencies = [
  "proc-macro2",
  "quote",
