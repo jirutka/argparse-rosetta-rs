@@ -47,6 +47,7 @@ xflags | 27 KiB | 1s *(full)* <br/>355ms *(incremental)* | 1ms | Y | ![Download 
 
 Notes:
 - Overhead will be lower if your application shares dependencies with your argument parsing library.
+- Size is measured on release builds with `panic = "abort"` and `strip = true`.
 
 # Running the Benchmarks
 

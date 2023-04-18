@@ -2,3 +2,7 @@
 members = [
     "examples/*",
 ]
+
+[profile.release]
+panic = "abort"
+strip = true
