@@ -27,23 +27,23 @@ docs*
 
 Name | Overhead (release) | Build (debug) | Parse (release) | Invalid UTF-8 | Downloads | Version
 -----|--------------------|---------------|-----------------|---------------|-----------|--------
-null | 0 KiB | 477ms *(full)* <br/>325ms *(incremental)* | 1ms | Y | - | -
-**argp** | **57 KiB** | 6s *(full)* <br/>412ms *(incremental)* | 1ms | Y | ![Download count](https://img.shields.io/crates/dr/argp) | v0.2.0
-argh | 39 KiB | 6s *(full)* <br/>409ms *(incremental)* | 1ms | N | ![Download count](https://img.shields.io/crates/dr/argh) | v0.1.9
-bpaf | 215 KiB | 2s *(full)* <br/>471ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/bpaf) | v0.7.7
-bpaf_derive | 214 KiB | 9s *(full)* <br/>464ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/bpaf) | v0.7.7
-clap | 608 KiB | 7s *(full)* <br/>745ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/clap) | v4.1.4
-clap-minimal | 428 KiB | 4s *(full)* <br/>614ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/clap) | v4.1.4
-clap_derive | 645 KiB | 15s *(full)* <br/>830ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/clap) | v4.1.4
-clap_lex | 37 KiB | 950ms *(full)* <br/>401ms *(incremental)* | 1ms | Y | ![Download count](https://img.shields.io/crates/dr/clap_lex) | v0.3.1
-gumdrop | 37 KiB | 5s *(full)* <br/>426ms *(incremental)* | 1ms | N | ![Download count](https://img.shields.io/crates/dr/gumdrop) | v0.8.1
-lexopt | 36 KiB | 750ms *(full)* <br/>358ms *(incremental)* | 1ms | Y | ![Download count](https://img.shields.io/crates/dr/lexopt) | v0.3.0
-pico-args | 32 KiB | 733ms *(full)* <br/>364ms *(incremental)* | 6ms | Y | ![Download count](https://img.shields.io/crates/dr/pico-args) | v0.5.0
-xflags | 27 KiB | 1s *(full)* <br/>355ms *(incremental)* | 1ms | Y | ![Download count](https://img.shields.io/crates/dr/xflags) | v0.3.1
+null | 0 KiB | 639ms *(full)* <br/>418ms *(incremental)* | 1ms | Y | - | -
+**argp** | **36 KiB** | 7s *(full)* <br/>554ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/argp) | v0.2.0
+argh | 24 KiB | 7s *(full)* <br/>550ms *(incremental)* | 2ms | N | ![Download count](https://img.shields.io/crates/dr/argh) | v0.1.10
+bpaf | 124 KiB | 2s *(full)* <br/>588ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/bpaf) | v0.7.10
+bpaf_derive | 124 KiB | 11s *(full)* <br/>607ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/bpaf) | v0.7.10
+clap | 348 KiB | 9s *(full)* <br/>930ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/clap) | v4.2.0
+clap-minimal | 220 KiB | 5s *(full)* <br/>766ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/clap) | v4.2.0
+clap_derive | 364 KiB | 16s *(full)* <br/>1s *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/clap) | v4.2.0
+clap_lex | 16 KiB | 1s *(full)* <br/>530ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/clap_lex) | v0.4.1
+gumdrop | 20 KiB | 7s *(full)* <br/>538ms *(incremental)* | 2ms | N | ![Download count](https://img.shields.io/crates/dr/gumdrop) | v0.8.1
+lexopt | 20 KiB | 955ms *(full)* <br/>465ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/lexopt) | v0.3.0
+pico-args | 16 KiB | 976ms *(full)* <br/>468ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/pico-args) | v0.5.0
+xflags | 16 KiB | 2s *(full)* <br/>443ms *(incremental)* | 2ms | Y | ![Download count](https://img.shields.io/crates/dr/xflags) | v0.3.1
 
-*System: Linux 5.15.0-1034-azure (x86_64) w/ `-j 2` (GitHub actions, [see log](https://github.com/jirutka/argparse-rosetta-rs/actions/runs/4527123109/jobs/7972720383))*
+*System: Linux 5.15.0-1034-azure (x86_64) w/ `-j 2` (GitHub actions, [see log](https://github.com/jirutka/argparse-rosetta-rs/actions/runs/4737610982/jobs/8410591911))*
 
-*rustc: rustc 1.68.1 (8460ca823 2023-03-20)*
+*rustc: rustc 1.68.2 (9eb3afe9e 2023-03-27)*
 
 Notes:
 - Overhead will be lower if your application shares dependencies with your argument parsing library.
